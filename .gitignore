@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/src/main/assets/credentials.json
+app/src/main/assets/google-services.json
+app/src/main/res/raw/dialogflow_key.json
