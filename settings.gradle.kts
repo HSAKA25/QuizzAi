@@ -11,14 +11,20 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
+
+    // ⭐ VERY IMPORTANT (prevents dependency conflicts)
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
     repositories {
         google()
         mavenCentral()
+
+        // ⭐ Required for MPAndroidChart
+        maven(url = "https://jitpack.io")
     }
 }
 
 rootProject.name = "Quizz"
 include(":app")
- 

@@ -5,13 +5,37 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="#0A0E27"
     android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="24dp">
+
+        <!-- Decorative Circle Top -->
+
+        <!-- Logo Icon Circle -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logoCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#1E1E3F"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="👤"
+                android:textSize="50sp"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
 
         <!-- Title -->
         <TextView
@@ -19,72 +43,221 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:letterSpacing="0.05"
-            android:text="Register Here!"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:letterSpacing="0.02"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/logoCard"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Email Input -->
-        <EditText
-            android:id="@+id/t1"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:hint="Enter Email"
-            android:inputType="textEmailAddress"
-            android:padding="16dp"
-            android:textColor="@android:color/white"
-            android:textColorHint="#AAAAAA"
-            android:backgroundTint="#1E1E1E"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:elevation="6dp"
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign up to get started"
+            android:textColor="#8892B0"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Email Input Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emailCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1E1E3F"
+            app:layout_constraintTop_toBottomOf="@id/subtitleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="📧"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/t1"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#5A6789"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Password Input Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/passwordCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#1E1E3F"
+            app:layout_constraintTop_toBottomOf="@id/emailCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="🔒"
+                    android:textSize="24sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/t2"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#5A6789"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Password Requirement Text -->
+        <TextView
+            android:id="@+id/passwordHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Use 5+ characters with a mix of letters &amp; numbers"
+            android:textColor="#5A6789"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:paddingStart="4dp"
+            app:layout_constraintTop_toBottomOf="@id/passwordCard"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Password Input -->
-        <EditText
-            android:id="@+id/t2"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:hint="Enter Password"
-            android:inputType="textPassword"
-            android:padding="16dp"
-            android:textColor="@android:color/white"
-            android:textColorHint="#AAAAAA"
-            android:backgroundTint="#1E1E1E"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:elevation="6dp"
-            app:layout_constraintTop_toBottomOf="@id/t1"
-            app:layout_constraintStart_toStartOf="@id/t1"
-            app:layout_constraintEnd_toEndOf="@id/t1"/>
-
         <!-- Create Account Button -->
-        <Button
-            android:id="@+id/b3"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonCard"
             android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:text="Create Account"
-            android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            android:backgroundTint="#1E90FF"
-            android:elevation="8dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="sans-serif-medium"
-            app:layout_constraintTop_toBottomOf="@id/t2"
-            app:layout_constraintStart_toStartOf="@id/t2"
-            app:layout_constraintEnd_toEndOf="@id/t2"/>
+            app:cardCornerRadius="30dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#1E90FF"
+            app:layout_constraintTop_toBottomOf="@id/passwordHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Create Account"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-medium"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Divider Section -->
+        <LinearLayout
+            android:id="@+id/dividerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@id/buttonCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#2A2E49"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  or continue with  "
+                android:textColor="#5A6789"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#2A2E49"/>
+        </LinearLayout>
+
+        <!-- Social Login Buttons -->
+
+        <!-- Sign In Link -->
+        <LinearLayout
+            android:id="@+id/signInSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?  "
+                android:textColor="#8892B0"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/signInLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Sign In"
+                android:textColor="#1E90FF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Decorative Circle Bottom -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

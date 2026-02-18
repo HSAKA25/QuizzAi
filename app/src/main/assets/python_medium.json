@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is a lambda function?",
+    "options": [
+      "A class method",
+      "A decorator",
+      "An anonymous function",
+      "A named function"
+    ],
+    "answer": "An anonymous function"
+  },
+  {
+    "question": "What does *args do in a function definition?",
+    "options": [
+      "Creates a tuple parameter",
+      "Accepts variable positional arguments",
+      "Accepts keyword arguments",
+      "Returns multiple values"
+    ],
+    "answer": "Accepts variable positional arguments"
+  },
+  {
+    "question": "What is list comprehension syntax?",
+    "options": [
+      "[x for x in list]",
+      "<x for x in list>",
+      "(x for x in list)",
+      "{x for x in list}"
+    ],
+    "answer": "[x for x in list]"
+  },
+  {
+    "question": "Which module is used for regular expressions?",
+    "options": [
+      "regexp",
+      "re",
+      "match",
+      "regex"
+    ],
+    "answer": "re"
+  },
+  {
+    "question": "What does enumerate() return?",
+    "options": [
+      "Index and value pairs",
+      "A dictionary",
+      "Just indices",
+      "Just values"
+    ],
+    "answer": "Index and value pairs"
+  },
+  {
+    "question": "What is the output of sorted([3,1,2])?",
+    "options": [
+      "[3, 2, 1]",
+      "(1, 2, 3)",
+      "{1, 2, 3}",
+      "[1, 2, 3]"
+    ],
+    "answer": "[1, 2, 3]"
+  },
+  {
+    "question": "What does 'self' refer to in a class?",
+    "options": [
+      "The parent class",
+      "The instance of the class",
+      "A global variable",
+      "The class itself"
+    ],
+    "answer": "The instance of the class"
+  },
+  {
+    "question": "Which method removes and returns the last element of a list?",
+    "options": [
+      "delete()",
+      "remove()",
+      "pop()",
+      "discard()"
+    ],
+    "answer": "pop()"
+  },
+  {
+    "question": "What is the purpose of __init__ in Python?",
+    "options": [
+      "Static method",
+      "Constructor method",
+      "Destructor method",
+      "Class method"
+    ],
+    "answer": "Constructor method"
+  },
+  {
+    "question": "What does zip() do?",
+    "options": [
+      "Merges dictionaries",
+      "Combines iterables element-wise",
+      "Compresses files",
+      "Sorts elements"
+    ],
+    "answer": "Combines iterables element-wise"
+  },
+  {
+    "question": "What is a generator in Python?",
+    "options": [
+      "A class decorator",
+      "An iterator class",
+      "A function that yields values",
+      "A list creator"
+    ],
+    "answer": "A function that yields values"
+  },
+  {
+    "question": "Which of these creates a set?",
+    "options": [
+      "{1, 2, 3}",
+      "<1, 2, 3>",
+      "[1, 2, 3]",
+      "(1, 2, 3)"
+    ],
+    "answer": "{1, 2, 3}"
+  },
+  {
+    "question": "What does map() do?",
+    "options": [
+      "Sorts items",
+      "Reduces items",
+      "Applies a function to each item",
+      "Filters items"
+    ],
+    "answer": "Applies a function to each item"
+  },
+  {
+    "question": "What is the difference between '==' and 'is'?",
+    "options": [
+      "No difference",
+      "== checks identity, is checks value",
+      "== checks value, is checks identity",
+      "Both check value"
+    ],
+    "answer": "== checks value, is checks identity"
+  },
+  {
+    "question": "What does try-except-finally do?",
+    "options": [
+      "None of these",
+      "Runs finally only on error",
+      "Handles exceptions and always runs finally",
+      "Handles exceptions only"
+    ],
+    "answer": "Handles exceptions and always runs finally"
+  }
+]

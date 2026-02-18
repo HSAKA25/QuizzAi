@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the difference between Comparable and Comparator?",
+    "options": [
+      "No practical difference",
+      "Comparable is self-ordering, Comparator is external",
+      "Comparator is built-in, Comparable is external",
+      "Both are the same"
+    ],
+    "answer": "Comparable is self-ordering, Comparator is external"
+  },
+  {
+    "question": "What does ClassLoader do in JVM?",
+    "options": [
+      "Handles exceptions",
+      "Compiles Java code",
+      "Manages garbage collection",
+      "Loads class files into JVM at runtime"
+    ],
+    "answer": "Loads class files into JVM at runtime"
+  },
+  {
+    "question": "What is a phantom reference?",
+    "options": [
+      "Reference that allows cleanup before GC",
+      "Soft reference",
+      "Strong reference",
+      "Weak reference"
+    ],
+    "answer": "Reference that allows cleanup before GC"
+  },
+  {
+    "question": "What does CompletableFuture provide?",
+    "options": [
+      "Timer functionality",
+      "Thread pool management",
+      "Synchronous execution",
+      "Asynchronous programming with callbacks"
+    ],
+    "answer": "Asynchronous programming with callbacks"
+  },
+  {
+    "question": "What is the purpose of PermGen/Metaspace?",
+    "options": [
+      "Handles I/O operations",
+      "Manages stack memory",
+      "Stores class metadata",
+      "Stores heap objects"
+    ],
+    "answer": "Stores class metadata"
+  },
+  {
+    "question": "What does ReentrantLock provide over synchronized?",
+    "options": [
+      "Faster performance only",
+      "Fairness, tryLock, interruptible locking",
+      "Automatic deadlock prevention",
+      "Simpler syntax"
+    ],
+    "answer": "Fairness, tryLock, interruptible locking"
+  },
+  {
+    "question": "What is bytecode in Java?",
+    "options": [
+      "Intermediate code run by JVM",
+      "Machine code",
+      "Source code",
+      "Assembly code"
+    ],
+    "answer": "Intermediate code run by JVM"
+  },
+  {
+    "question": "What is the purpose of @FunctionalInterface?",
+    "options": [
+      "Enables streams",
+      "Marks interface as having one abstract method",
+      "Creates lambda",
+      "Marks deprecated"
+    ],
+    "answer": "Marks interface as having one abstract method"
+  },
+  {
+    "question": "What is ConcurrentHashMap?",
+    "options": [
+      "Thread-safe HashMap with segment locking",
+      "Immutable map",
+      "Synchronized HashMap",
+      "Ordered thread-safe map"
+    ],
+    "answer": "Thread-safe HashMap with segment locking"
+  },
+  {
+    "question": "What does JIT compilation do?",
+    "options": [
+      "Compiles bytecode to native code at runtime",
+      "Compiles source to bytecode",
+      "Interprets bytecode",
+      "Optimizes source code"
+    ],
+    "answer": "Compiles bytecode to native code at runtime"
+  },
+  {
+    "question": "What is a memory leak in Java?",
+    "options": [
+      "Null pointer exception",
+      "Stack overflow",
+      "Objects referenced but no longer needed",
+      "Array out of bounds"
+    ],
+    "answer": "Objects referenced but no longer needed"
+  },
+  {
+    "question": "What is the Fork/Join framework used for?",
+    "options": [
+      "Sequential tasks",
+      "I/O operations",
+      "Parallel divide-and-conquer tasks",
+      "Network tasks"
+    ],
+    "answer": "Parallel divide-and-conquer tasks"
+  },
+  {
+    "question": "What does Stream.parallel() do?",
+    "options": [
+      "Makes stream sequential",
+      "Enables parallel processing of stream",
+      "Sorts stream",
+      "Filters stream"
+    ],
+    "answer": "Enables parallel processing of stream"
+  },
+  {
+    "question": "What is covariant return type?",
+    "options": [
+      "Overriding method can return subtype",
+      "Generics feature",
+      "Overriding must use same return type",
+      "Method returns multiple types"
+    ],
+    "answer": "Overriding method can return subtype"
+  },
+  {
+    "question": "What is the Happens-Before relationship?",
+    "options": [
+      "Memory visibility guarantee between threads",
+      "Order of method calls",
+      "Exception handling order",
+      "Class loading order"
+    ],
+    "answer": "Memory visibility guarantee between threads"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does C# stand for?",
+    "options": [
+      "C Number",
+      "C Hash",
+      "C Plus Sharp",
+      "C Sharp"
+    ],
+    "answer": "C Sharp"
+  },
+  {
+    "question": "Which keyword declares a variable that cannot be reassigned?",
+    "options": [
+      "fixed",
+      "readonly",
+      "static",
+      "const"
+    ],
+    "answer": "const"
+  },
+  {
+    "question": "What is the base class of all C# classes?",
+    "options": [
+      "System.Object",
+      "System.Class",
+      "System.Base",
+      "System.Root"
+    ],
+    "answer": "System.Object"
+  },
+  {
+    "question": "How do you write a single-line comment in C#?",
+    "options": [
+      "/*",
+      "--",
+      "#",
+      "//"
+    ],
+    "answer": "//"
+  },
+  {
+    "question": "What is the correct way to declare an integer?",
+    "options": [
+      "integer x = 5;",
+      "num x = 5;",
+      "int x = 5;",
+      "Int x = 5;"
+    ],
+    "answer": "int x = 5;"
+  },
+  {
+    "question": "Which keyword is used for inheritance in C#?",
+    "options": [
+      "inherits",
+      "extends",
+      ":",
+      "implements"
+    ],
+    "answer": ":"
+  },
+  {
+    "question": "What does Console.WriteLine() do?",
+    "options": [
+      "Prints to console with newline",
+      "Clears console",
+      "Reads from console",
+      "Prints without newline"
+    ],
+    "answer": "Prints to console with newline"
+  },
+  {
+    "question": "What is a namespace in C#?",
+    "options": [
+      "A container for organizing code",
+      "A class modifier",
+      "A function type",
+      "A variable type"
+    ],
+    "answer": "A container for organizing code"
+  },
+  {
+    "question": "Which loop is guaranteed to execute at least once?",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "foreach"
+    ],
+    "answer": "do-while"
+  },
+  {
+    "question": "What is the difference between value types and reference types?",
+    "options": [
+      "Both on stack",
+      "Value stored on stack, reference stored on heap",
+      "Both on heap",
+      "No difference"
+    ],
+    "answer": "Value stored on stack, reference stored on heap"
+  },
+  {
+    "question": "What keyword creates an object in C#?",
+    "options": [
+      "create",
+      "object",
+      "make",
+      "new"
+    ],
+    "answer": "new"
+  },
+  {
+    "question": "What is a property in C#?",
+    "options": [
+      "A constructor",
+      "A member with get/set accessors",
+      "A static method",
+      "A public field"
+    ],
+    "answer": "A member with get/set accessors"
+  },
+  {
+    "question": "What does 'using' statement do?",
+    "options": [
+      "Defines scope",
+      "Creates alias",
+      "Imports namespace",
+      "Ensures resource disposal (IDisposable)"
+    ],
+    "answer": "Ensures resource disposal (IDisposable)"
+  },
+  {
+    "question": "What is an enum in C#?",
+    "options": [
+      "A delegate type",
+      "Named set of integer constants",
+      "A collection type",
+      "A class type"
+    ],
+    "answer": "Named set of integer constants"
+  },
+  {
+    "question": "What does 'virtual' keyword allow?",
+    "options": [
+      "Method to be overridden in derived class",
+      "Method to be hidden",
+      "Method to be static",
+      "Method to be abstract"
+    ],
+    "answer": "Method to be overridden in derived class"
+  }
+]

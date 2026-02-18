@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is undefined behavior in C?",
+    "options": [
+      "Code whose behavior is not specified by standard",
+      "A warning",
+      "A compile error",
+      "A runtime error"
+    ],
+    "answer": "Code whose behavior is not specified by standard"
+  },
+  {
+    "question": "What is the strict aliasing rule?",
+    "options": [
+      "Accessing object through incompatible pointer type is UB",
+      "A casting rule",
+      "A memory rule",
+      "A pointer rule"
+    ],
+    "answer": "Accessing object through incompatible pointer type is UB"
+  },
+  {
+    "question": "What does __attribute__((packed)) do?",
+    "options": [
+      "Removes padding from struct",
+      "Optimizes struct",
+      "Adds padding",
+      "Aligns struct"
+    ],
+    "answer": "Removes padding from struct"
+  },
+  {
+    "question": "What is a vtable equivalent in C?",
+    "options": [
+      "A virtual pointer",
+      "A class table",
+      "Function pointer table in struct",
+      "A hash table"
+    ],
+    "answer": "Function pointer table in struct"
+  },
+  {
+    "question": "What is the difference between memcpy and memmove?",
+    "options": [
+      "No difference",
+      "memmove handles overlapping memory, memcpy doesn't",
+      "memmove is unsafe",
+      "memcpy is slower"
+    ],
+    "answer": "memmove handles overlapping memory, memcpy doesn't"
+  },
+  {
+    "question": "What does setjmp/longjmp provide?",
+    "options": [
+      "Memory management",
+      "Signal handling",
+      "Non-local goto for exception-like handling",
+      "Thread control"
+    ],
+    "answer": "Non-local goto for exception-like handling"
+  },
+  {
+    "question": "What is endianness?",
+    "options": [
+      "Bit alignment",
+      "Cache behavior",
+      "Byte order in memory (big vs little)",
+      "Memory padding"
+    ],
+    "answer": "Byte order in memory (big vs little)"
+  },
+  {
+    "question": "What is a translation unit in C?",
+    "options": [
+      "A header file",
+      "Single .c file after preprocessing",
+      "A compiled binary",
+      "An object file"
+    ],
+    "answer": "Single .c file after preprocessing"
+  },
+  {
+    "question": "What does the restrict keyword do?",
+    "options": [
+      "Prevents modification",
+      "Creates constant pointer",
+      "Enables optimization hint only",
+      "Tells compiler pointer is only way to access object"
+    ],
+    "answer": "Tells compiler pointer is only way to access object"
+  },
+  {
+    "question": "What is undefined behavior with signed integer overflow?",
+    "options": [
+      "Wraps around",
+      "Throws exception",
+      "Returns max value",
+      "Anything can happen, compiler may assume it never occurs"
+    ],
+    "answer": "Anything can happen, compiler may assume it never occurs"
+  },
+  {
+    "question": "What is position-independent code (PIC)?",
+    "options": [
+      "Heap-based code",
+      "Absolute addressed code",
+      "Code using relative addresses for shared libraries",
+      "Stack-based code"
+    ],
+    "answer": "Code using relative addresses for shared libraries"
+  },
+  {
+    "question": "What does volatile prevent?",
+    "options": [
+      "Memory leaks",
+      "Compiler from caching/reordering variable accesses",
+      "Race conditions",
+      "Null dereferences"
+    ],
+    "answer": "Compiler from caching/reordering variable accesses"
+  },
+  {
+    "question": "What is the purpose of a linker?",
+    "options": [
+      "Combines object files into executable",
+      "Runs program",
+      "Compiles source",
+      "Manages memory"
+    ],
+    "answer": "Combines object files into executable"
+  },
+  {
+    "question": "What is a calling convention?",
+    "options": [
+      "A naming rule",
+      "A design pattern",
+      "Rules for function calls (argument passing, cleanup)",
+      "A coding standard"
+    ],
+    "answer": "Rules for function calls (argument passing, cleanup)"
+  },
+  {
+    "question": "What does inline keyword suggest?",
+    "options": [
+      "Replace function call with function body",
+      "Prevent recursion",
+      "Create const function",
+      "Create static function"
+    ],
+    "answer": "Replace function call with function body"
+  }
+]

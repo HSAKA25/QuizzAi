@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is an extension function in Kotlin?",
+    "options": [
+      "A lambda function",
+      "Overriding a function",
+      "Importing a function",
+      "Adding function to existing class without inheritance"
+    ],
+    "answer": "Adding function to existing class without inheritance"
+  },
+  {
+    "question": "What are coroutines in Kotlin?",
+    "options": [
+      "Heavy threads",
+      "Timer functions",
+      "Lightweight threads for async programming",
+      "Callback functions"
+    ],
+    "answer": "Lightweight threads for async programming"
+  },
+  {
+    "question": "What is a sealed class?",
+    "options": [
+      "Restricted class hierarchy",
+      "Data class with restrictions",
+      "Abstract class",
+      "Open class"
+    ],
+    "answer": "Restricted class hierarchy"
+  },
+  {
+    "question": "What does 'lazy' do in Kotlin?",
+    "options": [
+      "Delays function call",
+      "Makes property mutable",
+      "Initializes property only when first accessed",
+      "Creates lazy list"
+    ],
+    "answer": "Initializes property only when first accessed"
+  },
+  {
+    "question": "What is the difference between List and MutableList?",
+    "options": [
+      "List is read-only, MutableList is mutable",
+      "Both are mutable",
+      "List is faster",
+      "Both are immutable"
+    ],
+    "answer": "List is read-only, MutableList is mutable"
+  },
+  {
+    "question": "What is a companion object?",
+    "options": [
+      "Static members inside a class",
+      "A helper class",
+      "A nested class",
+      "A singleton"
+    ],
+    "answer": "Static members inside a class"
+  },
+  {
+    "question": "What does 'apply' scope function do?",
+    "options": [
+      "Filters collection",
+      "Returns lambda result",
+      "Maps over collection",
+      "Configures object and returns it"
+    ],
+    "answer": "Configures object and returns it"
+  },
+  {
+    "question": "What is reified type parameter?",
+    "options": [
+      "Allows accessing type info at runtime",
+      "Erases type info",
+      "Creates generic type",
+      "Makes type nullable"
+    ],
+    "answer": "Allows accessing type info at runtime"
+  },
+  {
+    "question": "What does 'let' scope function return?",
+    "options": [
+      "Unit",
+      "Nothing",
+      "Result of the lambda block",
+      "The receiver object"
+    ],
+    "answer": "Result of the lambda block"
+  },
+  {
+    "question": "What is a higher-order function?",
+    "options": [
+      "Abstract function",
+      "Recursive function",
+      "Function taking or returning functions",
+      "Function with multiple parameters"
+    ],
+    "answer": "Function taking or returning functions"
+  },
+  {
+    "question": "What does 'by' keyword do in Kotlin?",
+    "options": [
+      "Inheritance",
+      "Delegation",
+      "Implementation",
+      "Override"
+    ],
+    "answer": "Delegation"
+  },
+  {
+    "question": "What is the 'also' scope function?",
+    "options": [
+      "Filters object",
+      "Returns lambda result",
+      "Transforms object",
+      "Performs action and returns receiver"
+    ],
+    "answer": "Performs action and returns receiver"
+  },
+  {
+    "question": "What are inline functions?",
+    "options": [
+      "Static functions",
+      "Functions whose body is inlined at call site",
+      "Extension functions",
+      "Functions in a class"
+    ],
+    "answer": "Functions whose body is inlined at call site"
+  },
+  {
+    "question": "What is Flow in Kotlin?",
+    "options": [
+      "Cold asynchronous stream of data",
+      "Hot stream",
+      "Callback wrapper",
+      "Single value async"
+    ],
+    "answer": "Cold asynchronous stream of data"
+  },
+  {
+    "question": "What does 'run' scope function do?",
+    "options": [
+      "Executes block and returns result",
+      "Configures object",
+      "Nothing",
+      "Returns receiver"
+    ],
+    "answer": "Executes block and returns result"
+  }
+]

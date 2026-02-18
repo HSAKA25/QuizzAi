@@ -1,0 +1,152 @@
+[
+  {
+    "question": "How do you declare a variable in Kotlin?",
+    "options": [
+      "let or const",
+      "int or string",
+      "var or val",
+      "dim or set"
+    ],
+    "answer": "var or val"
+  },
+  {
+    "question": "What is the difference between var and val?",
+    "options": [
+      "Both are immutable",
+      "val is mutable, var is immutable",
+      "Both are mutable",
+      "var is mutable, val is immutable"
+    ],
+    "answer": "var is mutable, val is immutable"
+  },
+  {
+    "question": "How do you define a function in Kotlin?",
+    "options": [
+      "void name()",
+      "function name()",
+      "fun functionName()",
+      "def name()"
+    ],
+    "answer": "fun functionName()"
+  },
+  {
+    "question": "What is string interpolation in Kotlin?",
+    "options": [
+      "Using $ inside a string",
+      "Using printf()",
+      "Using + to concat",
+      "Using format()"
+    ],
+    "answer": "Using $ inside a string"
+  },
+  {
+    "question": "What does ?: operator do in Kotlin?",
+    "options": [
+      "Comparison operator",
+      "Elvis operator - provides default if null",
+      "Bit operator",
+      "Range operator"
+    ],
+    "answer": "Elvis operator - provides default if null"
+  },
+  {
+    "question": "What is a data class in Kotlin?",
+    "options": [
+      "Abstract class",
+      "Object class",
+      "Sealed class",
+      "Class auto-generating equals, hashCode, toString"
+    ],
+    "answer": "Class auto-generating equals, hashCode, toString"
+  },
+  {
+    "question": "What does null safety mean in Kotlin?",
+    "options": [
+      "Null is the default",
+      "Null is not supported",
+      "All variables can be null",
+      "Variables can't be null unless explicitly declared"
+    ],
+    "answer": "Variables can't be null unless explicitly declared"
+  },
+  {
+    "question": "How do you declare a nullable String?",
+    "options": [
+      "String??",
+      "Nullable<String>",
+      "String | null",
+      "String?"
+    ],
+    "answer": "String?"
+  },
+  {
+    "question": "What is the Unit type in Kotlin?",
+    "options": [
+      "Equivalent to void",
+      "A number type",
+      "A boolean type",
+      "An empty string"
+    ],
+    "answer": "Equivalent to void"
+  },
+  {
+    "question": "What does 'when' replace in Kotlin?",
+    "options": [
+      "try-catch",
+      "for loop",
+      "switch statement",
+      "if statement"
+    ],
+    "answer": "switch statement"
+  },
+  {
+    "question": "What is the entry point of a Kotlin program?",
+    "options": [
+      "fun start()",
+      "fun main()",
+      "public static void main",
+      "void start()"
+    ],
+    "answer": "fun main()"
+  },
+  {
+    "question": "How do you create a list in Kotlin?",
+    "options": [
+      "ArrayList()",
+      "makeList()",
+      "new List()",
+      "listOf()"
+    ],
+    "answer": "listOf()"
+  },
+  {
+    "question": "What does 'is' operator do in Kotlin?",
+    "options": [
+      "Compares values",
+      "Checks type (instanceof)",
+      "Creates instance",
+      "Assigns value"
+    ],
+    "answer": "Checks type (instanceof)"
+  },
+  {
+    "question": "What is an object in Kotlin?",
+    "options": [
+      "Singleton pattern",
+      "Regular class",
+      "Abstract class",
+      "Data class"
+    ],
+    "answer": "Singleton pattern"
+  },
+  {
+    "question": "How do you iterate over a range in Kotlin?",
+    "options": [
+      "for (i in 1..10)",
+      "for(i=1;i<=10;i++)",
+      "foreach i to 10",
+      "loop 1 to 10"
+    ],
+    "answer": "for (i in 1..10)"
+  }
+]

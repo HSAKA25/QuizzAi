@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the size of int in Java?",
+    "options": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "8 bytes"
+    ],
+    "answer": "4 bytes"
+  },
+  {
+    "question": "Which keyword creates an object in Java?",
+    "options": [
+      "make",
+      "new",
+      "create",
+      "object"
+    ],
+    "answer": "new"
+  },
+  {
+    "question": "What is the parent class of all Java classes?",
+    "options": [
+      "Base",
+      "Super",
+      "Root",
+      "Object"
+    ],
+    "answer": "Object"
+  },
+  {
+    "question": "Which method is the entry point of a Java program?",
+    "options": [
+      "public void run()",
+      "static void begin()",
+      "void start()",
+      "public static void main(String[] args)"
+    ],
+    "answer": "public static void main(String[] args)"
+  },
+  {
+    "question": "What does JVM stand for?",
+    "options": [
+      "Java Visual Module",
+      "Java Variable Manager",
+      "Java Virtual Machine",
+      "Java Version Model"
+    ],
+    "answer": "Java Virtual Machine"
+  },
+  {
+    "question": "Which data type stores true/false in Java?",
+    "options": [
+      "boolean",
+      "bool",
+      "bit",
+      "flag"
+    ],
+    "answer": "boolean"
+  },
+  {
+    "question": "How do you declare a constant in Java?",
+    "options": [
+      "final",
+      "constant",
+      "static",
+      "const"
+    ],
+    "answer": "final"
+  },
+  {
+    "question": "What is the output of 5 / 2 in Java (integer division)?",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "2.5"
+    ],
+    "answer": "2"
+  },
+  {
+    "question": "Which keyword is used for inheritance in Java?",
+    "options": [
+      "extends",
+      "inherits",
+      "implements",
+      "super"
+    ],
+    "answer": "extends"
+  },
+  {
+    "question": "What does System.out.println() do?",
+    "options": [
+      "Prints without newline",
+      "Prints output with a newline",
+      "Takes user input",
+      "Exits the program"
+    ],
+    "answer": "Prints output with a newline"
+  },
+  {
+    "question": "Which collection maintains insertion order?",
+    "options": [
+      "HashMap",
+      "ArrayList",
+      "HashSet",
+      "TreeSet"
+    ],
+    "answer": "ArrayList"
+  },
+  {
+    "question": "What is autoboxing in Java?",
+    "options": [
+      "Auto import",
+      "Auto memory management",
+      "Auto conversion between primitives and wrappers",
+      "Auto type casting"
+    ],
+    "answer": "Auto conversion between primitives and wrappers"
+  },
+  {
+    "question": "Which keyword prevents method overriding?",
+    "options": [
+      "private",
+      "final",
+      "abstract",
+      "static"
+    ],
+    "answer": "final"
+  },
+  {
+    "question": "What is a constructor?",
+    "options": [
+      "A getter method",
+      "A method to destroy object",
+      "A method called when object is created",
+      "A static method"
+    ],
+    "answer": "A method called when object is created"
+  },
+  {
+    "question": "What does 'this' keyword refer to?",
+    "options": [
+      "Parent class",
+      "Current instance of the class",
+      "The main method",
+      "Static context"
+    ],
+    "answer": "Current instance of the class"
+  }
+]

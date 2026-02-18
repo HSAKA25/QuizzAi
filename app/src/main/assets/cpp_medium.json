@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is RAII in C++?",
+    "options": [
+      "Resource Acquisition Is Initialization - tie resource to object lifetime",
+      "A compiler flag",
+      "A memory model",
+      "A design pattern"
+    ],
+    "answer": "Resource Acquisition Is Initialization - tie resource to object lifetime"
+  },
+  {
+    "question": "What are smart pointers?",
+    "options": [
+      "Reference wrappers",
+      "Const pointers",
+      "Pointers that automatically manage memory",
+      "Faster raw pointers"
+    ],
+    "answer": "Pointers that automatically manage memory"
+  },
+  {
+    "question": "What is the difference between unique_ptr and shared_ptr?",
+    "options": [
+      "No difference",
+      "unique_ptr has single owner, shared_ptr has reference count",
+      "unique_ptr shares ownership",
+      "shared_ptr is faster"
+    ],
+    "answer": "unique_ptr has single owner, shared_ptr has reference count"
+  },
+  {
+    "question": "What is a virtual function?",
+    "options": [
+      "A pure function",
+      "Function overridden via vtable at runtime",
+      "A static function",
+      "An inline function"
+    ],
+    "answer": "Function overridden via vtable at runtime"
+  },
+  {
+    "question": "What is a pure virtual function?",
+    "options": [
+      "A const virtual",
+      "A static virtual",
+      "A virtual function with body",
+      "Virtual function with =0, making class abstract"
+    ],
+    "answer": "Virtual function with =0, making class abstract"
+  },
+  {
+    "question": "What does std::move do?",
+    "options": [
+      "Casts to rvalue reference to enable move semantics",
+      "Deletes an object",
+      "Copies an object",
+      "Swaps two objects"
+    ],
+    "answer": "Casts to rvalue reference to enable move semantics"
+  },
+  {
+    "question": "What is a template in C++?",
+    "options": [
+      "Blueprint for generic functions/classes",
+      "A design pattern",
+      "A virtual class",
+      "A macro"
+    ],
+    "answer": "Blueprint for generic functions/classes"
+  },
+  {
+    "question": "What is the STL?",
+    "options": [
+      "Static Type Library",
+      "System Template Layer",
+      "Standard Type Library",
+      "Standard Template Library - containers, algorithms, iterators"
+    ],
+    "answer": "Standard Template Library - containers, algorithms, iterators"
+  },
+  {
+    "question": "What is copy constructor?",
+    "options": [
+      "Constructor creating object as copy of another",
+      "Assignment operator",
+      "Move constructor",
+      "Default constructor"
+    ],
+    "answer": "Constructor creating object as copy of another"
+  },
+  {
+    "question": "What does 'const' member function mean?",
+    "options": [
+      "Method cannot modify object state",
+      "Method is inline",
+      "Method is static",
+      "Method is constant"
+    ],
+    "answer": "Method cannot modify object state"
+  },
+  {
+    "question": "What is operator overloading?",
+    "options": [
+      "Defining custom behavior for operators",
+      "Overloading functions",
+      "Virtual operators",
+      "Template operators"
+    ],
+    "answer": "Defining custom behavior for operators"
+  },
+  {
+    "question": "What is the Rule of Three?",
+    "options": [
+      "A design pattern",
+      "A template rule",
+      "A coding standard",
+      "If destructor/copy ctor/copy assign defined, define all three"
+    ],
+    "answer": "If destructor/copy ctor/copy assign defined, define all three"
+  },
+  {
+    "question": "What is an initializer list in constructor?",
+    "options": [
+      "Initializes members before constructor body",
+      "Static initialization",
+      "Default values",
+      "A list in class"
+    ],
+    "answer": "Initializes members before constructor body"
+  },
+  {
+    "question": "What does 'explicit' keyword prevent?",
+    "options": [
+      "Inlining",
+      "Template instantiation",
+      "Implicit type conversions",
+      "Explicit conversions"
+    ],
+    "answer": "Implicit type conversions"
+  },
+  {
+    "question": "What is the difference between vector and array?",
+    "options": [
+      "Vector is fixed",
+      "Array is dynamic",
+      "No difference",
+      "vector is dynamic, array is fixed size"
+    ],
+    "answer": "vector is dynamic, array is fixed size"
+  }
+]

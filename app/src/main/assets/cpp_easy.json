@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the correct syntax for cout?",
+    "options": [
+      "printf('Hello');",
+      "print('Hello');",
+      "cout << 'Hello';",
+      "echo 'Hello';"
+    ],
+    "answer": "cout << 'Hello';"
+  },
+  {
+    "question": "How do you declare a class in C++?",
+    "options": [
+      "object MyClass {}",
+      "class MyClass {};",
+      "define MyClass {}",
+      "Class MyClass {}"
+    ],
+    "answer": "class MyClass {};"
+  },
+  {
+    "question": "What is the :: operator in C++?",
+    "options": [
+      "Scope resolution operator",
+      "Member access operator",
+      "Pointer operator",
+      "Reference operator"
+    ],
+    "answer": "Scope resolution operator"
+  },
+  {
+    "question": "What does 'new' do in C++?",
+    "options": [
+      "Allocates memory on heap",
+      "Creates a reference",
+      "Allocates on stack",
+      "Initializes variable"
+    ],
+    "answer": "Allocates memory on heap"
+  },
+  {
+    "question": "What is a reference in C++?",
+    "options": [
+      "Alias for another variable",
+      "A copy of variable",
+      "A const variable",
+      "A pointer"
+    ],
+    "answer": "Alias for another variable"
+  },
+  {
+    "question": "Which header is needed for cin/cout?",
+    "options": [
+      "<input>",
+      "<stdio.h>",
+      "<iostream>",
+      "<console>"
+    ],
+    "answer": "<iostream>"
+  },
+  {
+    "question": "What is a constructor?",
+    "options": [
+      "A static method",
+      "A template",
+      "Special method called when object is created",
+      "A destructor"
+    ],
+    "answer": "Special method called when object is created"
+  },
+  {
+    "question": "What does 'delete' do in C++?",
+    "options": [
+      "Removes variable",
+      "Frees heap memory",
+      "Destroys class",
+      "Clears pointer"
+    ],
+    "answer": "Frees heap memory"
+  },
+  {
+    "question": "What is the difference between struct and class in C++?",
+    "options": [
+      "struct has no methods",
+      "class is faster",
+      "No difference",
+      "struct is public by default, class is private"
+    ],
+    "answer": "struct is public by default, class is private"
+  },
+  {
+    "question": "What does endl do?",
+    "options": [
+      "Just flushes",
+      "Outputs space",
+      "Just newline",
+      "Outputs newline and flushes buffer"
+    ],
+    "answer": "Outputs newline and flushes buffer"
+  },
+  {
+    "question": "What is function overloading?",
+    "options": [
+      "Overriding base function",
+      "Template function",
+      "Same function name, different parameters",
+      "Same name and parameters"
+    ],
+    "answer": "Same function name, different parameters"
+  },
+  {
+    "question": "What is a destructor?",
+    "options": [
+      "Copy method",
+      "Constructor alias",
+      "Method called when object is destroyed",
+      "Static method"
+    ],
+    "answer": "Method called when object is destroyed"
+  },
+  {
+    "question": "How do you access member via pointer?",
+    "options": [
+      "using &",
+      "using .",
+      "using ::",
+      "using ->"
+    ],
+    "answer": "using ->"
+  },
+  {
+    "question": "What does 'this' pointer point to?",
+    "options": [
+      "Static context",
+      "Base class",
+      "Current object",
+      "Parent object"
+    ],
+    "answer": "Current object"
+  },
+  {
+    "question": "What is a namespace in C++?",
+    "options": [
+      "A class",
+      "A header",
+      "A template",
+      "Named scope for organizing code"
+    ],
+    "answer": "Named scope for organizing code"
+  }
+]

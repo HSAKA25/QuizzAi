@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is a delegate in C#?",
+    "options": [
+      "A class method",
+      "A type-safe function pointer",
+      "A static method",
+      "An abstract method"
+    ],
+    "answer": "A type-safe function pointer"
+  },
+  {
+    "question": "What is LINQ in C#?",
+    "options": [
+      "A network library",
+      "An XML parser",
+      "A logging library",
+      "Language Integrated Query for collections"
+    ],
+    "answer": "Language Integrated Query for collections"
+  },
+  {
+    "question": "What does async/await do?",
+    "options": [
+      "Enables asynchronous programming",
+      "Handles exceptions",
+      "Blocks the thread",
+      "Creates new threads"
+    ],
+    "answer": "Enables asynchronous programming"
+  },
+  {
+    "question": "What is the difference between abstract class and interface?",
+    "options": [
+      "Abstract class has no members",
+      "Interface can have implementation",
+      "Abstract class can have implementation, interface cannot (pre C#8)",
+      "No difference"
+    ],
+    "answer": "Abstract class can have implementation, interface cannot (pre C#8)"
+  },
+  {
+    "question": "What is a generic type in C#?",
+    "options": [
+      "A value type",
+      "A base type",
+      "A nullable type",
+      "Type that works with any data type"
+    ],
+    "answer": "Type that works with any data type"
+  },
+  {
+    "question": "What does the '??' operator do?",
+    "options": [
+      "Logical AND",
+      "Checks equality",
+      "Returns right side if left is null",
+      "Compares types"
+    ],
+    "answer": "Returns right side if left is null"
+  },
+  {
+    "question": "What is an extension method?",
+    "options": [
+      "A static method",
+      "An override method",
+      "Adds methods to existing types without modifying them",
+      "A virtual method"
+    ],
+    "answer": "Adds methods to existing types without modifying them"
+  },
+  {
+    "question": "What is boxing in C#?",
+    "options": [
+      "Copying a class",
+      "Wrapping in array",
+      "Making immutable",
+      "Converting value type to reference type"
+    ],
+    "answer": "Converting value type to reference type"
+  },
+  {
+    "question": "What is the purpose of IDisposable?",
+    "options": [
+      "Formatting objects",
+      "Comparing objects",
+      "Releasing unmanaged resources",
+      "Cloning objects"
+    ],
+    "answer": "Releasing unmanaged resources"
+  },
+  {
+    "question": "What does 'sealed' class mean?",
+    "options": [
+      "Cannot have methods",
+      "Cannot have fields",
+      "Cannot be inherited",
+      "Cannot be instantiated"
+    ],
+    "answer": "Cannot be inherited"
+  },
+  {
+    "question": "What is a lambda expression in C#?",
+    "options": [
+      "Named function",
+      "Static method",
+      "Extension method",
+      "Anonymous function with => syntax"
+    ],
+    "answer": "Anonymous function with => syntax"
+  },
+  {
+    "question": "What is the difference between string and StringBuilder?",
+    "options": [
+      "Both immutable",
+      "Both mutable",
+      "StringBuilder is slower",
+      "string is immutable, StringBuilder is mutable"
+    ],
+    "answer": "string is immutable, StringBuilder is mutable"
+  },
+  {
+    "question": "What does yield return do?",
+    "options": [
+      "Pauses method",
+      "Creates iterator/generator method",
+      "Returns from method",
+      "Exits loop"
+    ],
+    "answer": "Creates iterator/generator method"
+  },
+  {
+    "question": "What is covariance in C# generics?",
+    "options": [
+      "Type erasure",
+      "Invariance",
+      "Contravariance",
+      "Allows using derived type where base expected"
+    ],
+    "answer": "Allows using derived type where base expected"
+  },
+  {
+    "question": "What is a struct vs class?",
+    "options": [
+      "No difference",
+      "Struct is value type, class is reference type",
+      "Both reference types",
+      "Struct is reference type"
+    ],
+    "answer": "Struct is value type, class is reference type"
+  }
+]

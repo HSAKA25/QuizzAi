@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050A14"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ═══════════════ TOP HEADER ═══════════════ -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#080F1E"
+            android:paddingBottom="20dp">
+
+            <View android:id="@+id/topStrip"
+                android:layout_width="0dp" android:layout_height="3dp"
+                android:background="#00E5FF"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button android:id="@+id/backBtn"
+                android:layout_width="wrap_content" android:layout_height="34dp"
+                android:text="◀  Back" android:textColor="#00E5FF" android:textSize="12sp"
+                android:textStyle="bold" android:textAllCaps="false"
+                android:backgroundTint="#0D1E2E" android:paddingHorizontal="14dp"
+                android:stateListAnimator="@null"
+                android:layout_marginStart="16dp" android:layout_marginTop="14dp"
+                app:layout_constraintTop_toBottomOf="@id/topStrip"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout android:id="@+id/aiBadge"
+                android:layout_width="wrap_content" android:layout_height="28dp"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="#091828" android:paddingHorizontal="10dp"
+                android:layout_marginEnd="16dp" android:layout_marginTop="14dp"
+                app:layout_constraintTop_toBottomOf="@id/topStrip"
+                app:layout_constraintEnd_toEndOf="parent">
+                <TextView android:layout_width="6dp" android:layout_height="6dp"
+                    android:background="#00E5FF" android:layout_marginEnd="5dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="AI ANALYTICS" android:textColor="#00E5FF"
+                    android:textSize="10sp" android:textStyle="bold" android:letterSpacing="0.12"/>
+            </LinearLayout>
+
+            <TextView android:id="@+id/titleLine1"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Performance" android:textColor="#FFFFFF"
+                android:textSize="28sp" android:textStyle="bold"
+                android:layout_marginStart="20dp" android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/backBtn"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView android:id="@+id/titleLine2"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Dashboard" android:textColor="#00E5FF"
+                android:textSize="28sp" android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/titleLine1"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AI-powered insights into your quiz progress"
+                android:textColor="#3D5166" android:textSize="12sp"
+                android:layout_marginStart="20dp" android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/titleLine2"
+                app:layout_constraintStart_toStartOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ═══════════════ TIME FILTER ═══════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Show: " android:textColor="#607D8B" android:textSize="13sp"
+                android:layout_marginEnd="10dp"/>
+
+            <androidx.cardview.widget.CardView android:id="@+id/btn1Week"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="18dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0A1628">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:text="Last 7 Days" android:textColor="#00E5FF"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:gravity="center" android:paddingHorizontal="16dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/btn2Week"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="18dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0A1628">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:text="Last 14 Days" android:textColor="#00E5FF"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:gravity="center" android:paddingHorizontal="16dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView android:id="@+id/btnAllTime"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                app:cardCornerRadius="18dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0A1628">
+                <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:text="All Time" android:textColor="#00E5FF"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:gravity="center" android:paddingHorizontal="16dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- ═══════════════ STAT PILLS ROW 1 ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#0A1628" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="BEST" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/bestScore" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#00E5FF" android:textSize="24sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="score" android:textColor="#1E3350" android:textSize="9sp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#0A1628" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="AVERAGE" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/avgScore" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#FFFFFF" android:textSize="24sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="score" android:textColor="#1E3350" android:textSize="9sp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="80dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#0A1628">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ATTEMPTS" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/totalAttempts" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#FFFFFF" android:textSize="24sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="quizzes" android:textColor="#1E3350" android:textSize="9sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ═══════════════ STAT PILLS ROW 2 ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="70dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#091220" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="WIN RATE" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/winRate" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#00E5A0" android:textSize="20sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="70dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#091220" android:layout_marginEnd="6dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="TREND" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/trend" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#FFC107" android:textSize="13sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="70dp"
+                android:layout_weight="1" android:orientation="vertical" android:gravity="center"
+                android:background="#091220">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="STREAK" android:textColor="#3D5166" android:textSize="9sp"
+                    android:textStyle="bold" android:letterSpacing="0.14"/>
+                <TextView android:id="@+id/streak" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="—"
+                    android:textColor="#FF9100" android:textSize="20sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ═══════════════ AI INSIGHT ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp" android:paddingVertical="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🤖" android:textSize="18sp" android:layout_marginEnd="8dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="AI Insight"
+                    android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="GENERATED" android:textColor="#00E5FF" android:textSize="8sp"
+                    android:textStyle="bold" android:letterSpacing="0.12"
+                    android:background="#061522" android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#0D1E2E" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/aiInsightText"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Analyzing your performance data..."
+                android:textColor="#8CA0B4" android:textSize="13sp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+
+        <!-- ═══════════════ LINE CHART — Score History ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp" android:paddingTop="14dp" android:paddingBottom="10dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📈  Score History"
+                    android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ALL TIME" android:textColor="#00E5FF" android:textSize="8sp"
+                    android:textStyle="bold" android:letterSpacing="0.12"
+                    android:background="#061522" android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+        </LinearLayout>
+
+        <!-- ═══════════════ PIE + WEEKLY SIDE BY SIDE ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp">
+
+            <!-- Pie chart — Win/Loss -->
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:background="#040E1C" android:padding="12dp" android:layout_marginEnd="7dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🏆  Win / Fail" android:textColor="#FFFFFF"
+                    android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"/>
+            </LinearLayout>
+
+            <!-- Radar chart — Topic Mastery -->
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:background="#040E1C" android:padding="12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🕸  Topic Mastery" android:textColor="#FFFFFF"
+                    android:textSize="13sp" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                <com.github.mikephil.charting.charts.RadarChart
+                    android:id="@+id/radarChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ═══════════════ WEEKLY BAR ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp" android:paddingTop="14dp" android:paddingBottom="10dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📅  Avg Score by Day of Week"
+                    android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="WEEKLY" android:textColor="#818CF8" android:textSize="8sp"
+                    android:textStyle="bold" android:letterSpacing="0.12"
+                    android:background="#0D0E28" android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/weeklyBarChart"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+        </LinearLayout>
+
+        <!-- ═══════════════ SCORE DISTRIBUTION ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp" android:paddingTop="14dp" android:paddingBottom="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="📊  Score Distribution"
+                    android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="BY RANGE" android:textColor="#00E5A0" android:textSize="8sp"
+                    android:textStyle="bold" android:letterSpacing="0.12"
+                    android:background="#061A12" android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+        </LinearLayout>
+
+        <!-- ═══════════════ TOPIC ACCURACY BARS ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp" android:paddingTop="14dp" android:paddingBottom="14dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🎯  Accuracy by Topic"
+                android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Java -->
+            <TextView android:id="@+id/tvJava" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Java"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbJava" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#00E5FF"
+                android:layout_marginBottom="10dp"/>
+            <!-- Python -->
+            <TextView android:id="@+id/tvPython" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Python"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbPython" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#00E5A0"
+                android:layout_marginBottom="10dp"/>
+            <!-- Kotlin -->
+            <TextView android:id="@+id/tvKotlin" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Kotlin"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbKotlin" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#FF9100"
+                android:layout_marginBottom="10dp"/>
+            <!-- C# -->
+            <TextView android:id="@+id/tvCSharp" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="C#"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbCSharp" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#C869FF"
+                android:layout_marginBottom="10dp"/>
+            <!-- C -->
+            <TextView android:id="@+id/tvC" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="C"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbC" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#FF5370"
+                android:layout_marginBottom="10dp"/>
+            <!-- C++ -->
+            <TextView android:id="@+id/tvCpp" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="C++"
+                android:textColor="#8CA0B4" android:textSize="11sp" android:layout_marginBottom="3dp"/>
+            <ProgressBar android:id="@+id/pbCpp" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent" android:layout_height="6dp"
+                android:max="100" android:progress="0" android:progressTint="#FFC107"/>
+        </LinearLayout>
+
+        <!-- ═══════════════ TIPS ═══════════════ -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:background="#040E1C"
+            android:layout_marginHorizontal="14dp" android:layout_marginTop="14dp"
+            android:layout_marginBottom="24dp"
+            android:paddingHorizontal="14dp" android:paddingVertical="14dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="How to Read This Dashboard"
+                    android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="TIPS" android:textColor="#FF9100" android:textSize="8sp"
+                    android:textStyle="bold" android:letterSpacing="0.12"
+                    android:background="#1A0E00" android:paddingHorizontal="8dp" android:paddingVertical="3dp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#0D1E2E" android:layout_marginBottom="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="📈  Score History — Track if you're consistently improving.\n\n🏆  Win / Fail Pie — See your overall pass rate at a glance.\n\n🕸  Topic Mastery — Spot your strongest and weakest language.\n\n📅  Day of Week — Find which days you perform best.\n\n📊  Score Distribution — See if your scores cluster low or high.\n\n🎯  Accuracy by Topic — Per-language accuracy breakdown.\n\n🔥  Streak — Consecutive quizzes with a passing score (≥60%)."
+                android:textColor="#607D8B" android:textSize="12sp" android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

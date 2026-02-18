@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the GIL in Python?",
+    "options": [
+      "Global Interpreter Lock preventing true multithreading",
+      "Graphics Interface Layer",
+      "Global Integer Limit",
+      "General Input Library"
+    ],
+    "answer": "Global Interpreter Lock preventing true multithreading"
+  },
+  {
+    "question": "What is a metaclass in Python?",
+    "options": [
+      "A mixin class",
+      "An abstract class",
+      "A class whose instances are classes",
+      "A parent class"
+    ],
+    "answer": "A class whose instances are classes"
+  },
+  {
+    "question": "What does __slots__ do?",
+    "options": [
+      "Enables multiple inheritance",
+      "Creates class slots",
+      "Defines abstract methods",
+      "Restricts instance attributes to save memory"
+    ],
+    "answer": "Restricts instance attributes to save memory"
+  },
+  {
+    "question": "What is the output of [x**2 for x in range(4) if x%2==0]?",
+    "options": [
+      "[0, 4]",
+      "[1, 9]",
+      "[0, 4, 16]",
+      "[4, 16]"
+    ],
+    "answer": "[0, 4]"
+  },
+  {
+    "question": "What is a descriptor in Python?",
+    "options": [
+      "A decorator pattern",
+      "A property alias",
+      "A type annotation",
+      "An object defining __get__, __set__, __delete__"
+    ],
+    "answer": "An object defining __get__, __set__, __delete__"
+  },
+  {
+    "question": "What does functools.lru_cache do?",
+    "options": [
+      "Creates lazy functions",
+      "Limits recursion",
+      "Caches function results for repeated calls",
+      "Imports cached modules"
+    ],
+    "answer": "Caches function results for repeated calls"
+  },
+  {
+    "question": "What is the MRO in Python?",
+    "options": [
+      "Memory Reference Object",
+      "Main Runtime Object",
+      "Module Registration Object",
+      "Method Resolution Order for inheritance"
+    ],
+    "answer": "Method Resolution Order for inheritance"
+  },
+  {
+    "question": "What does contextlib.contextmanager do?",
+    "options": [
+      "Manages imports",
+      "Creates decorators",
+      "Creates context managers from generators",
+      "Handles context errors"
+    ],
+    "answer": "Creates context managers from generators"
+  },
+  {
+    "question": "What is the difference between deepcopy and copy?",
+    "options": [
+      "deepcopy copies nested objects, copy is shallow",
+      "copy is deeper",
+      "No difference",
+      "deepcopy only works on lists"
+    ],
+    "answer": "deepcopy copies nested objects, copy is shallow"
+  },
+  {
+    "question": "What does @staticmethod do?",
+    "options": [
+      "Makes method private",
+      "Creates a class property",
+      "Defines a method not needing self or cls",
+      "Enables method overriding"
+    ],
+    "answer": "Defines a method not needing self or cls"
+  },
+  {
+    "question": "What is the output of bool([])?",
+    "options": [
+      "False",
+      "True",
+      "None",
+      "Error"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "What does itertools.chain do?",
+    "options": [
+      "Sorts iterables",
+      "Chains multiple iterables into one",
+      "Filters iterables",
+      "Maps over iterables"
+    ],
+    "answer": "Chains multiple iterables into one"
+  },
+  {
+    "question": "What is __call__ used for?",
+    "options": [
+      "Calls parent class",
+      "Deletes object",
+      "Initializes object",
+      "Makes an object callable like a function"
+    ],
+    "answer": "Makes an object callable like a function"
+  },
+  {
+    "question": "What does yield from do?",
+    "options": [
+      "Creates a new generator",
+      "Returns from generator",
+      "Delegates to a sub-generator",
+      "Yields a list"
+    ],
+    "answer": "Delegates to a sub-generator"
+  },
+  {
+    "question": "What is the purpose of __repr__?",
+    "options": [
+      "Compares objects",
+      "Returns user-friendly string",
+      "Returns official string representation",
+      "Initializes object"
+    ],
+    "answer": "Returns official string representation"
+  }
+]

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#060A14"
+    android:fitsSystemWindows="true">
+
+    <!-- ══════════════════════════════════════════
+         HEADER
+    ══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#09101F"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:paddingEnd="16dp"
+        android:elevation="20dp">
+
+        <!-- Back -->
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="‹"
+            android:textSize="36sp"
+            android:textColor="#7C3AED"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Avatar circle (styled via Java) -->
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp">
+
+            <!-- Ring border (purple circle behind) -->
+            <TextView
+                android:id="@+id/avatarRing"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="#7C3AED"/>
+
+            <!-- Avatar face (styled via Java) -->
+            <TextView
+                android:id="@+id/avatarInner"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:background="#120828"
+                android:text="🤖"
+                android:textSize="22sp"
+                android:gravity="center"/>
+
+            <!-- Online dot -->
+            <TextView
+                android:id="@+id/onlineDot"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|end"
+                android:background="#00E5A0"/>
+        </FrameLayout>
+
+        <!-- Name + status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Assistant"
+                android:textColor="#F0F6FC"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● Active now"
+                android:textColor="#00C896"
+                android:textSize="11.5sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- Menu -->
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="⋮"
+            android:textSize="22sp"
+            android:textColor="#3D4451"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+
+    <!-- Purple divider glow -->
+    <View
+        android:id="@+id/headerGlow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/chatHeader"
+        android:background="#1E1040"/>
+
+    <!-- ══════════════════════════════════════════
+         DATE SEPARATOR
+    ══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/dateSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerGlow"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="8dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#0F1625"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:textColor="#1F2937"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#0F1625"/>
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════
+         CHAT LIST
+    ══════════════════════════════════════════ -->
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dateSeparator"
+        android:layout_above="@id/typingIndicator"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="4dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"/>
+
+    <!-- ══════════════════════════════════════════
+         TYPING INDICATOR
+    ══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/typingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chipsScroll"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <!-- Bot mini face -->
+        <TextView
+            android:id="@+id/typingAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#120828"
+            android:text="🤖"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <!-- Dots bubble (rounded via Java) -->
+        <LinearLayout
+            android:id="@+id/typingBubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#111827"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/typingDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● ● ●"
+                android:textColor="#7C3AED"
+                android:textSize="9sp"
+                android:letterSpacing="0.3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════
+         QUICK CHIPS
+    ══════════════════════════════════════════ -->
+    <HorizontalScrollView
+        android:id="@+id/chipsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/inputContainer"
+        android:scrollbars="none"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:clipToPadding="false"
+        android:requiresFadingEdge="horizontal"
+        android:fadingEdgeLength="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/chip1"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:text="  📋 Rules  "
+                android:textColor="#A78BFA"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:background="#160B30"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/chip2"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:text="  ☕ Java  "
+                android:textColor="#34D399"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:background="#061C16"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/chip3"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:text="  🐍 Python  "
+                android:textColor="#60A5FA"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:background="#060E1F"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/chip4"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:text="  🏆 Score  "
+                android:textColor="#FBBF24"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:background="#160E00"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/chip5"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="  🛠 Help  "
+                android:textColor="#F87171"
+                android:textSize="12.5sp"
+                android:gravity="center"
+                android:background="#160606"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ══════════════════════════════════════════
+         INPUT BAR
+    ══════════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#09101F"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        android:elevation="24dp">
+
+        <!-- Input bubble (rounded via Java) -->
+        <LinearLayout
+            android:id="@+id/inputBubble"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:background="#111827"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="😊"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/inputMsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type a message..."
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:paddingStart="2dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:textColor="#E2E8F0"
+                android:textColorHint="#2D3748"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <!-- Send button (rounded via Java) -->
+        <LinearLayout
+            android:id="@+id/sendContainer"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="#7C3AED"
+            android:gravity="center"
+            android:elevation="8dp">
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="➤"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

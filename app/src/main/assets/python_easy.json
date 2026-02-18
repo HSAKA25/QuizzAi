@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the output of print(type([]))?",
+    "options": [
+      "<class 'tuple'>",
+      "<class 'set'>",
+      "<class 'list'>",
+      "<class 'dict'>"
+    ],
+    "answer": "<class 'list'>"
+  },
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": [
+      "def",
+      "define",
+      "fun",
+      "function"
+    ],
+    "answer": "def"
+  },
+  {
+    "question": "What does len('hello') return?",
+    "options": [
+      "hello",
+      "5",
+      "4",
+      "6"
+    ],
+    "answer": "5"
+  },
+  {
+    "question": "Which of these is a valid Python comment?",
+    "options": [
+      "/* comment */",
+      "-- comment",
+      "# This is a comment",
+      "// This is a comment"
+    ],
+    "answer": "# This is a comment"
+  },
+  {
+    "question": "What is the result of 3 ** 2 in Python?",
+    "options": [
+      "9",
+      "6",
+      "8",
+      "None"
+    ],
+    "answer": "9"
+  },
+  {
+    "question": "Which data type is immutable in Python?",
+    "options": [
+      "set",
+      "tuple",
+      "dict",
+      "list"
+    ],
+    "answer": "tuple"
+  },
+  {
+    "question": "What is the output of bool(0)?",
+    "options": [
+      "None",
+      "True",
+      "False",
+      "0"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "How do you start a for loop in Python?",
+    "options": [
+      "for i in range(5):",
+      "loop i to 5:",
+      "for(i=0;i<5;i++)",
+      "foreach i in 5:"
+    ],
+    "answer": "for i in range(5):"
+  },
+  {
+    "question": "Which function converts a string to integer?",
+    "options": [
+      "str()",
+      "chr()",
+      "int()",
+      "float()"
+    ],
+    "answer": "int()"
+  },
+  {
+    "question": "What does 'append' do to a list?",
+    "options": [
+      "Sorts the list",
+      "Adds element at start",
+      "Adds element at end",
+      "Removes last element"
+    ],
+    "answer": "Adds element at end"
+  },
+  {
+    "question": "What is the correct way to create a dictionary?",
+    "options": [
+      "['key': 'value']",
+      "{'key': 'value'}",
+      "('key', 'value')",
+      "<key: value>"
+    ],
+    "answer": "{'key': 'value'}"
+  },
+  {
+    "question": "Which operator is used for floor division?",
+    "options": [
+      "//",
+      "**",
+      "%",
+      "/"
+    ],
+    "answer": "//"
+  },
+  {
+    "question": "What is the output of print('Hello'[1])?",
+    "options": [
+      "e",
+      "o",
+      "H",
+      "l"
+    ],
+    "answer": "e"
+  },
+  {
+    "question": "Which keyword is used to handle exceptions?",
+    "options": [
+      "catch",
+      "handle",
+      "error",
+      "try"
+    ],
+    "answer": "try"
+  },
+  {
+    "question": "What does range(3) produce?",
+    "options": [
+      "1, 2",
+      "0, 1, 2, 3",
+      "1, 2, 3",
+      "0, 1, 2"
+    ],
+    "answer": "0, 1, 2"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is structured concurrency in Kotlin?",
+    "options": [
+      "Random coroutine creation",
+      "Coroutines tied to a lifecycle scope",
+      "Thread management",
+      "Callback chaining"
+    ],
+    "answer": "Coroutines tied to a lifecycle scope"
+  },
+  {
+    "question": "What is a continuation in coroutines?",
+    "options": [
+      "A thread state",
+      "Object representing suspended computation",
+      "A callback interface",
+      "A coroutine job"
+    ],
+    "answer": "Object representing suspended computation"
+  },
+  {
+    "question": "What does StateFlow differ from SharedFlow?",
+    "options": [
+      "SharedFlow has initial value",
+      "No difference",
+      "StateFlow has initial value, SharedFlow doesn't",
+      "StateFlow doesn't replay"
+    ],
+    "answer": "StateFlow has initial value, SharedFlow doesn't"
+  },
+  {
+    "question": "What is crossinline in Kotlin?",
+    "options": [
+      "Prevents non-local returns in lambda",
+      "Makes lambda inline",
+      "Prevents inlining",
+      "Creates inline class"
+    ],
+    "answer": "Prevents non-local returns in lambda"
+  },
+  {
+    "question": "What is a type alias in Kotlin?",
+    "options": [
+      "A type cast",
+      "A generic constraint",
+      "A new type",
+      "Alternative name for existing type"
+    ],
+    "answer": "Alternative name for existing type"
+  },
+  {
+    "question": "What does 'noinline' do?",
+    "options": [
+      "Makes all lambdas inline",
+      "Prevents optimization",
+      "Creates non-recursive lambda",
+      "Prevents specific lambda from being inlined"
+    ],
+    "answer": "Prevents specific lambda from being inlined"
+  },
+  {
+    "question": "What is a delegated property?",
+    "options": [
+      "A static property",
+      "A nullable property",
+      "Property whose get/set is handled by another object",
+      "A lazy property"
+    ],
+    "answer": "Property whose get/set is handled by another object"
+  },
+  {
+    "question": "What is the difference between launch and async in coroutines?",
+    "options": [
+      "async is faster",
+      "launch returns result",
+      "No difference",
+      "launch returns Job, async returns Deferred"
+    ],
+    "answer": "launch returns Job, async returns Deferred"
+  },
+  {
+    "question": "What does SupervisorJob do?",
+    "options": [
+      "Child failures don't cancel siblings",
+      "Manages coroutine priority",
+      "Cancels all children on failure",
+      "Creates new scope"
+    ],
+    "answer": "Child failures don't cancel siblings"
+  },
+  {
+    "question": "What is variance in Kotlin generics?",
+    "options": [
+      "Type erasure",
+      "Generic constraints",
+      "In/out modifiers for type parameters",
+      "Reification"
+    ],
+    "answer": "In/out modifiers for type parameters"
+  },
+  {
+    "question": "What does 'out' variance mean?",
+    "options": [
+      "Invariant",
+      "Covariant - can produce but not consume",
+      "Contravariant",
+      "Reified type"
+    ],
+    "answer": "Covariant - can produce but not consume"
+  },
+  {
+    "question": "What is a contract in Kotlin?",
+    "options": [
+      "Abstract interface",
+      "Agreement between compiler and developer about code behavior",
+      "Sealed class",
+      "Extension function"
+    ],
+    "answer": "Agreement between compiler and developer about code behavior"
+  },
+  {
+    "question": "What does withContext do?",
+    "options": [
+      "Joins coroutines",
+      "Switches coroutine dispatcher",
+      "Creates new coroutine",
+      "Cancels coroutine"
+    ],
+    "answer": "Switches coroutine dispatcher"
+  },
+  {
+    "question": "What is the purpose of CoroutineExceptionHandler?",
+    "options": [
+      "Catches all exceptions",
+      "Handles uncaught exceptions in coroutines",
+      "Handles checked exceptions",
+      "Replaces try-catch"
+    ],
+    "answer": "Handles uncaught exceptions in coroutines"
+  },
+  {
+    "question": "What is a value class in Kotlin?",
+    "options": [
+      "Primitive wrapper",
+      "Inline class wrapping single value with no overhead",
+      "Data class optimization",
+      "Sealed subclass"
+    ],
+    "answer": "Inline class wrapping single value with no overhead"
+  }
+]

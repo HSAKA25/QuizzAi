@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the CLR in .NET?",
+    "options": [
+      "Common Library Reference",
+      "Core Language Runtime",
+      "C# Language Runtime",
+      "Common Language Runtime executing managed code"
+    ],
+    "answer": "Common Language Runtime executing managed code"
+  },
+  {
+    "question": "What is reflection in C#?",
+    "options": [
+      "A memory technique",
+      "A design pattern",
+      "Inspecting and modifying program structure at runtime",
+      "A sorting algorithm"
+    ],
+    "answer": "Inspecting and modifying program structure at runtime"
+  },
+  {
+    "question": "What does Span<T> provide?",
+    "options": [
+      "A buffer type",
+      "Safe pointer to contiguous memory without allocation",
+      "A generic list",
+      "A memory stream"
+    ],
+    "answer": "Safe pointer to contiguous memory without allocation"
+  },
+  {
+    "question": "What is the purpose of CancellationToken?",
+    "options": [
+      "Cooperative cancellation of async operations",
+      "Timer management",
+      "Thread synchronization",
+      "Exception handling"
+    ],
+    "answer": "Cooperative cancellation of async operations"
+  },
+  {
+    "question": "What is expression trees in C#?",
+    "options": [
+      "Abstract syntax only",
+      "Lambda shortcuts",
+      "LINQ internals",
+      "Data structures representing code as objects"
+    ],
+    "answer": "Data structures representing code as objects"
+  },
+  {
+    "question": "What does ConfigureAwait(false) do?",
+    "options": [
+      "Forces UI thread",
+      "Cancels continuation",
+      "Continues on any thread, not captured context",
+      "Creates new task"
+    ],
+    "answer": "Continues on any thread, not captured context"
+  },
+  {
+    "question": "What is the difference between Task and ValueTask?",
+    "options": [
+      "No difference",
+      "ValueTask is deprecated",
+      "ValueTask avoids heap allocation for sync-completing ops",
+      "Task is faster"
+    ],
+    "answer": "ValueTask avoids heap allocation for sync-completing ops"
+  },
+  {
+    "question": "What is a record type in C#?",
+    "options": [
+      "Immutable reference type with value semantics",
+      "A sealed class",
+      "A struct alias",
+      "Mutable class"
+    ],
+    "answer": "Immutable reference type with value semantics"
+  },
+  {
+    "question": "What does the Unsafe class provide?",
+    "options": [
+      "Reflection",
+      "Exception handling",
+      "Thread safety",
+      "Pointer arithmetic and memory operations"
+    ],
+    "answer": "Pointer arithmetic and memory operations"
+  },
+  {
+    "question": "What is a discriminated union pattern in C#?",
+    "options": [
+      "A design pattern only",
+      "Native language feature",
+      "An enum extension",
+      "Simulated using sealed classes/records"
+    ],
+    "answer": "Simulated using sealed classes/records"
+  },
+  {
+    "question": "What is IL (Intermediate Language)?",
+    "options": [
+      "Source code backup",
+      "Assembly language",
+      "Machine code",
+      "Platform-independent bytecode compiled from C#"
+    ],
+    "answer": "Platform-independent bytecode compiled from C#"
+  },
+  {
+    "question": "What does 'ref struct' enforce?",
+    "options": [
+      "Reference to struct",
+      "Mutable struct",
+      "Shared struct",
+      "Must live on stack, cannot be boxed or heap-allocated"
+    ],
+    "answer": "Must live on stack, cannot be boxed or heap-allocated"
+  },
+  {
+    "question": "What is the purpose of IAsyncEnumerable<T>?",
+    "options": [
+      "Parallel enumeration",
+      "Synchronous enumeration",
+      "Task collection",
+      "Async streaming of data with await foreach"
+    ],
+    "answer": "Async streaming of data with await foreach"
+  },
+  {
+    "question": "What is source generators in C#?",
+    "options": [
+      "Runtime code gen",
+      "Reflection alternative",
+      "Template system",
+      "Compile-time code generation"
+    ],
+    "answer": "Compile-time code generation"
+  },
+  {
+    "question": "What does pattern matching with 'switch expression' provide?",
+    "options": [
+      "Type checking only",
+      "Null handling",
+      "Simple if-else",
+      "Exhaustive, concise multi-case value mapping"
+    ],
+    "answer": "Exhaustive, concise multi-case value mapping"
+  }
+]

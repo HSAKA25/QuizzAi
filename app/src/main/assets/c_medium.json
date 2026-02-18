@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the difference between malloc and calloc?",
+    "options": [
+      "calloc initializes to zero, malloc doesn't",
+      "No difference",
+      "malloc is faster always",
+      "calloc allocates less memory"
+    ],
+    "answer": "calloc initializes to zero, malloc doesn't"
+  },
+  {
+    "question": "What is a segmentation fault?",
+    "options": [
+      "Null pointer only",
+      "Stack overflow",
+      "Division by zero",
+      "Accessing memory not allocated to the program"
+    ],
+    "answer": "Accessing memory not allocated to the program"
+  },
+  {
+    "question": "What does the 'static' keyword do inside a function?",
+    "options": [
+      "Variable retains value between function calls",
+      "Makes variable constant",
+      "Allocates on heap",
+      "Makes variable global"
+    ],
+    "answer": "Variable retains value between function calls"
+  },
+  {
+    "question": "What is a dangling pointer?",
+    "options": [
+      "Pointer to freed/deallocated memory",
+      "NULL pointer",
+      "Wild pointer",
+      "Uninitialized pointer"
+    ],
+    "answer": "Pointer to freed/deallocated memory"
+  },
+  {
+    "question": "How do you pass array to a function in C?",
+    "options": [
+      "Pass pointer to first element",
+      "Pass entire array",
+      "Pass array size only",
+      "Arrays can't be passed"
+    ],
+    "answer": "Pass pointer to first element"
+  },
+  {
+    "question": "What is the difference between struct and union?",
+    "options": [
+      "No difference",
+      "Union has more members",
+      "Struct members share memory",
+      "Union members share same memory location"
+    ],
+    "answer": "Union members share same memory location"
+  },
+  {
+    "question": "What does realloc() do?",
+    "options": [
+      "Frees and allocates",
+      "Resizes previously allocated memory block",
+      "Reallocates freed memory",
+      "Allocates new block"
+    ],
+    "answer": "Resizes previously allocated memory block"
+  },
+  {
+    "question": "What is a function pointer?",
+    "options": [
+      "Function parameter",
+      "Return value of function",
+      "Pointer in a function",
+      "Pointer storing address of a function"
+    ],
+    "answer": "Pointer storing address of a function"
+  },
+  {
+    "question": "What does volatile keyword mean?",
+    "options": [
+      "Variable can be changed externally, disable optimization",
+      "Thread-safe variable",
+      "Shared variable",
+      "Constant variable"
+    ],
+    "answer": "Variable can be changed externally, disable optimization"
+  },
+  {
+    "question": "What is the difference between #define and const?",
+    "options": [
+      "No difference",
+      "const is faster",
+      "#define is type-safe",
+      "#define is preprocessor, const is compiler-enforced"
+    ],
+    "answer": "#define is preprocessor, const is compiler-enforced"
+  },
+  {
+    "question": "What does fseek() do?",
+    "options": [
+      "Reads file",
+      "Closes file",
+      "Writes to file",
+      "Moves file position indicator"
+    ],
+    "answer": "Moves file position indicator"
+  },
+  {
+    "question": "What is a memory leak?",
+    "options": [
+      "Stack overflow",
+      "NULL pointer dereference",
+      "Buffer overflow",
+      "Allocated memory never freed"
+    ],
+    "answer": "Allocated memory never freed"
+  },
+  {
+    "question": "What does bit masking do?",
+    "options": [
+      "Shifts bits randomly",
+      "Converts types",
+      "Encrypts data",
+      "Manipulates specific bits using AND/OR/XOR"
+    ],
+    "answer": "Manipulates specific bits using AND/OR/XOR"
+  },
+  {
+    "question": "What is the stack vs heap?",
+    "options": [
+      "Stack automatic, heap dynamic allocation",
+      "Stack is dynamic",
+      "Both same",
+      "Heap is automatic"
+    ],
+    "answer": "Stack automatic, heap dynamic allocation"
+  },
+  {
+    "question": "What does 'extern' keyword do?",
+    "options": [
+      "Makes variable external",
+      "Creates global variable",
+      "Declares variable defined in another file",
+      "Links files"
+    ],
+    "answer": "Declares variable defined in another file"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does printf() do in C?",
+    "options": [
+      "Reads input",
+      "Frees memory",
+      "Prints formatted output to stdout",
+      "Allocates memory"
+    ],
+    "answer": "Prints formatted output to stdout"
+  },
+  {
+    "question": "Which data type stores a single character?",
+    "options": [
+      "character",
+      "string",
+      "letter",
+      "char"
+    ],
+    "answer": "char"
+  },
+  {
+    "question": "What is the size of int on most 32-bit systems?",
+    "options": [
+      "8 bytes",
+      "1 byte",
+      "4 bytes",
+      "2 bytes"
+    ],
+    "answer": "4 bytes"
+  },
+  {
+    "question": "Which operator is used to get address of a variable?",
+    "options": [
+      "&",
+      ".",
+      "*",
+      "->"
+    ],
+    "answer": "&"
+  },
+  {
+    "question": "How do you declare a pointer to int?",
+    "options": [
+      "int p->",
+      "int p*;",
+      "int *p;",
+      "pointer int p;"
+    ],
+    "answer": "int *p;"
+  },
+  {
+    "question": "What does scanf() do?",
+    "options": [
+      "Reads formatted input from stdin",
+      "Formats strings",
+      "Scans files",
+      "Prints to screen"
+    ],
+    "answer": "Reads formatted input from stdin"
+  },
+  {
+    "question": "Which header file is needed for printf?",
+    "options": [
+      "string.h",
+      "stdlib.h",
+      "stdio.h",
+      "math.h"
+    ],
+    "answer": "stdio.h"
+  },
+  {
+    "question": "What is the correct syntax for a for loop?",
+    "options": [
+      "loop(condition)",
+      "for(init; condition; update)",
+      "for(init, condition, update)",
+      "for init to end"
+    ],
+    "answer": "for(init; condition; update)"
+  },
+  {
+    "question": "What is a NULL pointer?",
+    "options": [
+      "Pointer to zero",
+      "Empty pointer variable",
+      "Pointer not pointing to valid memory",
+      "Pointer to NULL string"
+    ],
+    "answer": "Pointer not pointing to valid memory"
+  },
+  {
+    "question": "What does sizeof() return?",
+    "options": [
+      "Memory address",
+      "Size in bytes of a variable or type",
+      "Value of variable",
+      "Number of elements"
+    ],
+    "answer": "Size in bytes of a variable or type"
+  },
+  {
+    "question": "Which function allocates memory dynamically?",
+    "options": [
+      "malloc()",
+      "alloc()",
+      "new()",
+      "memalloc()"
+    ],
+    "answer": "malloc()"
+  },
+  {
+    "question": "What is the output of 7 % 3?",
+    "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "How do you access a structure member?",
+    "options": [
+      "using * operator",
+      "using . operator",
+      "using -> operator",
+      "using & operator"
+    ],
+    "answer": "using . operator"
+  },
+  {
+    "question": "What is a void function?",
+    "options": [
+      "Abstract function",
+      "Empty function",
+      "Function with no parameters",
+      "Function that returns no value"
+    ],
+    "answer": "Function that returns no value"
+  },
+  {
+    "question": "What does 'break' do in a loop?",
+    "options": [
+      "Pauses loop",
+      "Continues to next iteration",
+      "Exits program",
+      "Exits the loop immediately"
+    ],
+    "answer": "Exits the loop immediately"
+  }
+]

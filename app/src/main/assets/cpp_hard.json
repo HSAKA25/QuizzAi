@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is template metaprogramming?",
+    "options": [
+      "Macro programming",
+      "A design pattern",
+      "Computation at compile time using templates",
+      "Runtime code generation"
+    ],
+    "answer": "Computation at compile time using templates"
+  },
+  {
+    "question": "What is perfect forwarding?",
+    "options": [
+      "Copying arguments",
+      "Const forwarding",
+      "Moving all arguments",
+      "Forwarding arguments preserving value category"
+    ],
+    "answer": "Forwarding arguments preserving value category"
+  },
+  {
+    "question": "What is a variadic template?",
+    "options": [
+      "Template with defaults",
+      "Template accepting variable number of type parameters",
+      "Recursive template",
+      "Specialized template"
+    ],
+    "answer": "Template accepting variable number of type parameters"
+  },
+  {
+    "question": "What does std::forward do?",
+    "options": [
+      "Conditionally casts to rvalue based on template param",
+      "Always copies",
+      "Swaps values",
+      "Always moves"
+    ],
+    "answer": "Conditionally casts to rvalue based on template param"
+  },
+  {
+    "question": "What is CRTP (Curiously Recurring Template Pattern)?",
+    "options": [
+      "Derived class passes itself as template to base",
+      "A factory pattern",
+      "A policy pattern",
+      "A singleton pattern"
+    ],
+    "answer": "Derived class passes itself as template to base"
+  },
+  {
+    "question": "What is undefined behavior with dangling references?",
+    "options": [
+      "Accessing reference after object lifetime ends is UB",
+      "A segfault always",
+      "A compile warning",
+      "A runtime error"
+    ],
+    "answer": "Accessing reference after object lifetime ends is UB"
+  },
+  {
+    "question": "What is the Rule of Five?",
+    "options": [
+      "Five template rules",
+      "Five design rules",
+      "Only move semantics",
+      "Rule of Three + move constructor + move assignment"
+    ],
+    "answer": "Rule of Three + move constructor + move assignment"
+  },
+  {
+    "question": "What does constexpr do?",
+    "options": [
+      "Inlines function",
+      "Evaluates expression at compile time",
+      "Enables templates",
+      "Makes variable const"
+    ],
+    "answer": "Evaluates expression at compile time"
+  },
+  {
+    "question": "What is type erasure in C++?",
+    "options": [
+      "Template specialization",
+      "Removing types",
+      "Virtual inheritance",
+      "Hiding concrete type behind a uniform interface"
+    ],
+    "answer": "Hiding concrete type behind a uniform interface"
+  },
+  {
+    "question": "What is std::optional?",
+    "options": [
+      "A nullable pointer",
+      "A smart pointer",
+      "Type that may or may not contain a value",
+      "A variant type"
+    ],
+    "answer": "Type that may or may not contain a value"
+  },
+  {
+    "question": "What is a fold expression in C++17?",
+    "options": [
+      "Expands variadic pack with binary operator",
+      "A template fold",
+      "A lambda fold",
+      "A constexpr fold"
+    ],
+    "answer": "Expands variadic pack with binary operator"
+  },
+  {
+    "question": "What is the difference between static and dynamic polymorphism?",
+    "options": [
+      "Both at compile time",
+      "Both at runtime",
+      "Static=templates at compile time, dynamic=virtual at runtime",
+      "No difference"
+    ],
+    "answer": "Static=templates at compile time, dynamic=virtual at runtime"
+  },
+  {
+    "question": "What does std::variant provide?",
+    "options": [
+      "A multi-value container",
+      "An optional type",
+      "A nullable type",
+      "Type-safe union holding one of several types"
+    ],
+    "answer": "Type-safe union holding one of several types"
+  },
+  {
+    "question": "What is structured bindings in C++17?",
+    "options": [
+      "A lambda capture",
+      "A template feature",
+      "Decomposing tuples/structs into named variables",
+      "A binding pattern"
+    ],
+    "answer": "Decomposing tuples/structs into named variables"
+  },
+  {
+    "question": "What is the purpose of std::atomic?",
+    "options": [
+      "A thread type",
+      "A mutex wrapper",
+      "Lock-free thread-safe operations on variables",
+      "A memory barrier"
+    ],
+    "answer": "Lock-free thread-safe operations on variables"
+  }
+]

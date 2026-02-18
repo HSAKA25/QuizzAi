@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What is the difference between == and .equals()?",
+    "options": [
+      "Both compare references",
+      "== compares references, .equals() compares values",
+      "No difference",
+      "Both compare values"
+    ],
+    "answer": "== compares references, .equals() compares values"
+  },
+  {
+    "question": "What is an interface in Java?",
+    "options": [
+      "A contract with abstract methods",
+      "A static class",
+      "An abstract class",
+      "A class with no methods"
+    ],
+    "answer": "A contract with abstract methods"
+  },
+  {
+    "question": "What does the 'synchronized' keyword do?",
+    "options": [
+      "Syncs files",
+      "Imports sync library",
+      "Prevents concurrent access to a method/block",
+      "Makes variable thread-safe by itself"
+    ],
+    "answer": "Prevents concurrent access to a method/block"
+  },
+  {
+    "question": "What is the purpose of 'super' keyword?",
+    "options": [
+      "Refers to parent class",
+      "Refers to current class",
+      "Refers to static context",
+      "Creates new object"
+    ],
+    "answer": "Refers to parent class"
+  },
+  {
+    "question": "Which design pattern does Iterator implement?",
+    "options": [
+      "Concurrency pattern",
+      "Structural pattern",
+      "Behavioral pattern",
+      "Creational pattern"
+    ],
+    "answer": "Behavioral pattern"
+  },
+  {
+    "question": "What is a functional interface?",
+    "options": [
+      "Interface with exactly one abstract method",
+      "Interface with default methods only",
+      "Interface with static methods",
+      "Interface with no methods"
+    ],
+    "answer": "Interface with exactly one abstract method"
+  },
+  {
+    "question": "What does Collections.sort() use internally?",
+    "options": [
+      "Quick sort",
+      "Bubble sort",
+      "Heap sort",
+      "Merge sort (TimSort)"
+    ],
+    "answer": "Merge sort (TimSort)"
+  },
+  {
+    "question": "What is the difference between HashMap and TreeMap?",
+    "options": [
+      "Both are unordered",
+      "HashMap sorted, TreeMap unordered",
+      "Both are sorted",
+      "HashMap unordered, TreeMap sorted by key"
+    ],
+    "answer": "HashMap unordered, TreeMap sorted by key"
+  },
+  {
+    "question": "What is method overloading?",
+    "options": [
+      "Different name, same parameters",
+      "Same name, same parameters",
+      "Overriding parent method",
+      "Same name, different parameters"
+    ],
+    "answer": "Same name, different parameters"
+  },
+  {
+    "question": "What does 'static' mean for a variable?",
+    "options": [
+      "Automatically initialized",
+      "Only for current instance",
+      "Shared across all instances",
+      "Cannot be changed"
+    ],
+    "answer": "Shared across all instances"
+  },
+  {
+    "question": "What is a checked exception?",
+    "options": [
+      "Exception at runtime only",
+      "Error in JVM",
+      "Exception that must be handled at compile time",
+      "Unchecked runtime error"
+    ],
+    "answer": "Exception that must be handled at compile time"
+  },
+  {
+    "question": "What does StringBuilder do?",
+    "options": [
+      "Splits string",
+      "Creates immutable string",
+      "Formats string",
+      "Creates mutable string sequence"
+    ],
+    "answer": "Creates mutable string sequence"
+  },
+  {
+    "question": "What is the diamond problem?",
+    "options": [
+      "Ambiguity in multiple inheritance",
+      "A design pattern",
+      "A sorting algorithm",
+      "A memory error"
+    ],
+    "answer": "Ambiguity in multiple inheritance"
+  },
+  {
+    "question": "Which Java 8 feature allows functions as parameters?",
+    "options": [
+      "Annotations",
+      "Lambda expressions",
+      "Generics",
+      "Enums"
+    ],
+    "answer": "Lambda expressions"
+  },
+  {
+    "question": "What is the purpose of 'volatile' keyword?",
+    "options": [
+      "Prevents null values",
+      "Ensures variable visibility across threads",
+      "Enables synchronization",
+      "Makes variable constant"
+    ],
+    "answer": "Ensures variable visibility across threads"
+  }
+]
